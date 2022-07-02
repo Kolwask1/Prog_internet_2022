@@ -17,41 +17,45 @@
     <header>
         <h1>exemplo de 1 formulario</h1>
     </header>
-    <section id="sumario" style="display: flex; flex-direction: row;">
+    <section id="sumario" >
         <h2> Indice de tags html </h2>
         <div style="display: flex; flex-direction: row;">
-        <fieldset id="inputs">
-            <legend>tipos de inputs</legend>
+            <fieldset id="inputs">
+                <legend>tipos de inputs</legend>
+                <ul>
+                    <li><a href="#btnOla">button </a></li>
+                    <li><a href="#usotabaco">checkbox</a></li>
+                    <li><a href="#cor">color</a></li>
+                    <li><a href="#dtnasc">date</a></li>
+                    <li><a href="#dhvenda">datetime-local</a></li>
+                    <li><a href="#email">email</a></li>
+                    <li><a href="#fotopessoal">file</a></li>
+                    <li><a href="#">hidden</a></li>
+                    <li><a href="#">image</a></li>
+                    <li><a href="#mespagamento">month</a></li>
+                    <li><a href="#idade">number</a></li>
+                    <li><a href="#senha">password</a></li>
+                    <li><a href="#idcasado">radio</a></li>
+                    <li><a href="#grausatisfacao">range</a></li>
+                    <li><a href="#btnlimpar">reset</a></li>
+                    <li><a href="#pesquisar">search</a></li>
+                    <li><a href="#btnEnviar">submit</a></li>
+                    <li><a href="#telefone">tel</a></li>
+                    <li><a href="#nome">text</a></li>
+                    <li><a href="#navegador">text com datalist</a></li>
+                    <li><a href="#hentrega">time</a></li>
+                    <li><a href="#pagina">url</a></li>
+                    <li><a href="#semana">week</a></li>
+                </ul>
+            </fieldset>
+            <fieldset> <legend>
+                seletores
+            </legend>
             <ul>
-                <li><a href="#btnOla">button </a></li>
-                <li><a href="#usotabaco">checkbox</a></li>
-                <li><a href="#cor">color</a></li>
-                <li><a href="#dtnasc">date</a></li>
-                <li><a href="#dhvenda">datetime-local</a></li>
-                <li><a href="#email">email</a></li>
-                <li><a href="#fotopessoal">file</a></li>
-                <li><a href="#">hidden</a></li>
-                <li><a href="#">image</a></li>
-                <li><a href="#mespagamento">month</a></li>
-                <li><a href="#idade">number</a></li>
-                <li><a href="#senha">password</a></li>
-                <li><a href="#idcasado">radio</a></li>
-                <li><a href="#grausatisfacao">range</a></li>
-                <li><a href="#btnlimpar">reset</a></li>
-                <li><a href="#pesquisar">search</a></li>
-                <li><a href="#btnEnviar">submit</a></li>
-                <li><a href="#telefone">tel</a></li>
-                <li><a href="#nome">text</a></li>
-                <li><a href="#navegador">text com datalist</a></li>
-                <li><a href="#hentrega">time</a></li>
-                <li><a href="#pagina">url</a></li>
-                <li><a href="#semana">week</a></li>
+                <li><a href="#">select de uma lista </a></li>
+                <li><a href="#">select de uma lista </a></li>
             </ul>
-        </fieldset>
-        <fieldset>
-            <li><a href="#">select de uma lista </a>/li>
-            <li><a href="#">select de uma lista </a>/li>    
-        </fieldset>
+            </fieldset>
         </div>
 
     </section>
@@ -137,7 +141,8 @@
             <!----uso do tel-->
             <div>
                 <label for="telefone">Telefone de contato</label>
-                <input type="tel" name="telefone" id="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required> <!--(00) 00000 0000-->
+                <input type="tel" name="telefone" id="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+                <!--(00) 00000 0000-->
             </div>
             <!-----data de nascimento-->
             <div>
@@ -173,8 +178,7 @@
                     </div>
                     <!--- uso do data lst para um text-->
                     <label for="navegador">escolha o seu navegador de preferencia:</label>
-                    <input type="text" name="navegador" id="navegador"
-                    list="lstNavegador">
+                    <input type="text" name="navegador" id="navegador" list="lstNavegador">
                     <datalist id="lstNavegador">
                         <option value="Edge"></option>
                         <option value="Chrome"></option>
@@ -187,18 +191,18 @@
                     <label for="pagina">indique o endereco da pagina pessoal</label>
                     <input type="url" name="pagina" id="pagina">
                 </div>
-                    <!---uso do month--->
-                    <div>
-                        <label for="mespagamento"> indique o mes para pagamento de sua assinatura></label>
-                        <input type="month" name="mespagamento" id="mespagamento">
-                    </div>
+                <!---uso do month--->
+                <div>
+                    <label for="mespagamento"> indique o mes para pagamento de sua assinatura></label>
+                    <input type="month" name="mespagamento" id="mespagamento">
+                </div>
 
-                    <!---Uso do datetime local-->
-                    <div>
-                        <label for="dhvenda">data e hora venda </label>
-                        <input type="datetime-local" name="dhvenda" id="dhvenda">
-                    </div>
-                    <!---hora de entrega-->
+                <!---Uso do datetime local-->
+                <div>
+                    <label for="dhvenda">data e hora venda </label>
+                    <input type="datetime-local" name="dhvenda" id="dhvenda">
+                </div>
+                <!---hora de entrega-->
                 <div>
                     <label for="hentrega">hora de entrega</label>
                     <input type="time" name="hentrega" id="hentrega">
@@ -208,28 +212,28 @@
                     <label for="semana">Semana do curso</label>
                     <input type="week" name="semana" id="semana">
                 </div>
-                     <!---uso do search (x pra apagar no final)-->
-                     <div>
-                         <label for="peaquisar">Digite o termo a ser pesquisado</label>
-                         <input type="search" name="pequisar" id="pesquisar">
-                     </div>
-                    <!---uso do File-->
-                    <div>
-                        <label for="fotopessoal">indique uma foto para seu cv</label>
-                        <input type="file" name="fotopessoal" id="fotopessoal">
-                    </div>
-                    <!----uso do file com multiplos arquivos -->
-                    <div>
-                        <label for="fotospreodutos">indicar as fotos dos produtos</label>
-                        <input type="file" name="fotospreodutos" id="fotosprodutos" multiple>
-                    </div>
-                    <!---uso do input image-->
-                    <div>
-                        <label for="btnimage">usando o input image</label>
-                        <input type="image" src="Assets/pngegg.png" alt="imagem login" width="80px" id="btnimage">
-                    </div>
-                    <input type="submit" value="Enviar" id="btnEnviar">
-                    <input type="reset" value="limpar" id="btnlimpar">
+                <!---uso do search (x pra apagar no final)-->
+                <div>
+                    <label for="peaquisar">Digite o termo a ser pesquisado</label>
+                    <input type="search" name="pequisar" id="pesquisar">
+                </div>
+                <!---uso do File-->
+                <div>
+                    <label for="fotopessoal">indique uma foto para seu cv</label>
+                    <input type="file" name="fotopessoal" id="fotopessoal">
+                </div>
+                <!----uso do file com multiplos arquivos -->
+                <div>
+                    <label for="fotospreodutos">indicar as fotos dos produtos</label>
+                    <input type="file" name="fotospreodutos" id="fotosprodutos" multiple>
+                </div>
+                <!---uso do input image-->
+                <div>
+                    <label for="btnimage">usando o input image</label>
+                    <input type="image" src="Assets/pngegg.png" alt="imagem login" width="80px" id="btnimage">
+                </div>
+                <input type="submit" value="Enviar" id="btnEnviar">
+                <input type="reset" value="limpar" id="btnlimpar">
         </form>
     </section>
 </body>
