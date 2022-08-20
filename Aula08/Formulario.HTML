@@ -15,13 +15,13 @@
 
 <body>
     <header>
-        <h1>exemplo de 1 formulario</h1>
+        <h1>Exemplo de um formulario</h1>
     </header>
-    <section id="sumario" >
+    <section id="sumario">
         <h2> Indice de tags html </h2>
         <div style="display: flex; flex-direction: row;">
             <fieldset id="inputs">
-                <legend>tipos de inputs</legend>
+                <legend>Tipos de inputs</legend>
                 <ul>
                     <li><a href="#btnOla">button </a></li>
                     <li><a href="#usotabaco">checkbox</a></li>
@@ -48,24 +48,37 @@
                     <li><a href="#semana">week</a></li>
                 </ul>
             </fieldset>
-            <fieldset> <legend>
-                seletores
-            </legend>
-            <ul>
-                <li><a href="#">select de uma lista </a></li>
-                <li><a href="#">select de uma lista </a></li>
-            </ul>
+            <fieldset>
+                <legend>
+                    Seletores
+                </legend>
+                <ul>
+                    <li><a href="#seltime">Select de uma lista </a></li>
+                    <li><a href="#seljogos">Select de uma lista </a></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>datalist</legend>
+                <ul>
+                    <li><a href="#inplegumes">Datalist com Rotulos</a></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>TextArea</legend>
+                <ul>
+                    <li><a href="#txtbio">Exemplo do textArea</a></li>
+                </ul>
             </fieldset>
         </div>
 
     </section>
 
     <section id=" cadastro">
-        <h2>inicio de formulario</h2>
+        <h2>Inicio de Formulario</h2>
         <form action="#">
             <!---uso do hidden -->
             <div>
-                <label for="id">aqui tem um ponto hidden</label>
+                <label for="id">Aqui tem um ponto Hidden</label>
                 <input type="hidden" name="id" id="id" value="10">
             </div>
             <!---button-->
@@ -98,29 +111,29 @@
                     <legend>Estado civil</legend>
                     <div>
                         <input type="radio" name="estadocivil" id="idcasado" value="casado">
-                        <label for="idcasado">casado</label>
+                        <label for="idcasado">Casado</label>
                     </div>
                     <div>
                         <input type="radio" name="estadocivil" id="idsolteiro" value="solteiro">
-                        <label for="idsolteiro">solteiro</label>
+                        <label for="idsolteiro">Solteiro</label>
                     </div>
                     <div>
                         <input type="radio" name="estadocivil" id="iddesquitado" value="desquitado">
-                        <label for="iddesquitado">desquitado</label>
+                        <label for="iddesquitado">Desquitado</label>
                     </div>
                     <div>
                         <input type="radio" name="estadocivil" id="idsepardo" value="separado">
-                        <label for="idseparado">separado</label>
+                        <label for="idseparado">Separado</label>
                     </div>
                     <div>
                         <input type="radio" name="estadocivil" id="idviuvo" value="viuvo">
-                        <label for="idviuvo">viuvo</label>
+                        <label for="idviuvo">Viuvo</label>
                     </div>
                 </fieldset>
             </div>
             <!----seletor de cor-->
             <div>
-                <label for="cor">escolha uma cor</label>
+                <label for="cor">Escolha uma cor</label>
                 <input type="color" name="cor" id="cor">
             </div>
             <!---nome da pessoa-->
@@ -130,7 +143,7 @@
             </div>
             <!----endereço da pessoa-->
             <div>
-                <label for="endereço">endereço:</label>
+                <label for="endereço">Endereço:</label>
                 <input type="text" name="endereço" id="endereço" size="50" required>
             </div>
             <!--endereço de email-->
@@ -146,17 +159,17 @@
             </div>
             <!-----data de nascimento-->
             <div>
-                <label for="dtnasc">data de nascimneto</label>
+                <label for="dtnasc">Data de nascimneto</label>
                 <input type="date" name="dtnasc" id="dtnasc">
             </div>
             <!-----senha do cartao de credito-->
             <div>
-                <label for="senha">senha:</label>
+                <label for="senha">Senha:</label>
                 <input type="password" name="senha" id="senha" required>
             </div>
             <!-----idade-->
             <div>
-                <label for="idade">idade:</label>
+                <label for="idade">Idade:</label>
                 <input type="number" name="idade" id="idade">
                 <div>
                     <!--uso do range-->
@@ -177,7 +190,7 @@
                         </datalist>
                     </div>
                     <!--- uso do data lst para um text-->
-                    <label for="navegador">escolha o seu navegador de preferencia:</label>
+                    <label for="navegador">Escolha o seu navegador de preferencia:</label>
                     <input type="text" name="navegador" id="navegador" list="lstNavegador">
                     <datalist id="lstNavegador">
                         <option value="Edge"></option>
@@ -188,23 +201,23 @@
                 </div>
                 <!---udo do url-->
                 <div>
-                    <label for="pagina">indique o endereco da pagina pessoal</label>
+                    <label for="pagina">Indique o endereco da pagina pessoal</label>
                     <input type="url" name="pagina" id="pagina">
                 </div>
                 <!---uso do month--->
                 <div>
-                    <label for="mespagamento"> indique o mes para pagamento de sua assinatura></label>
+                    <label for="mespagamento"> Indique o mes para pagamento de sua assinatura></label>
                     <input type="month" name="mespagamento" id="mespagamento">
                 </div>
 
                 <!---Uso do datetime local-->
                 <div>
-                    <label for="dhvenda">data e hora venda </label>
+                    <label for="dhvenda">Data e hora venda </label>
                     <input type="datetime-local" name="dhvenda" id="dhvenda">
                 </div>
                 <!---hora de entrega-->
                 <div>
-                    <label for="hentrega">hora de entrega</label>
+                    <label for="hentrega">Hora de entrega</label>
                     <input type="time" name="hentrega" id="hentrega">
                 </div>
                 <!----uso do week-->
@@ -229,9 +242,71 @@
                 </div>
                 <!---uso do input image-->
                 <div>
-                    <label for="btnimage">usando o input image</label>
+                    <label for="btnimage">Usando o input image</label>
                     <input type="image" src="Assets/pngegg.png" alt="imagem login" width="80px" id="btnimage">
                 </div>
+                 <fieldset>
+                     <legend> Uso de datalist </legend>
+                     <div>
+                         <!---Datakist com rótulos-->
+                         <label for="inplegumes">Legumes:</label>
+                         <input list="lstlegumes" type="text" id="inplegumes" name="legumes">
+                         <datalist id="lstlegumes">
+                             <option value="01">Brocolis</option>
+                             <option value="02">Pimentão</option>
+                             <option value="03">Batata</option>
+                             <option value="04">Cenoura</option>
+                         </datalist> 
+                     </div>
+                 </fieldset>
+                 <!---Seletores-->
+                 <fieldset>
+                     <legend>Seletores</legend>
+                     <div>
+                         <label for="seltime">Time do coração</label>
+                         <select name="seltime" id="seltime">
+                             <optgroup label="Times Paulistas">
+                                 <option value="01"selected>São Paulo</option> <!----opção selecionada-->
+                                 <option value="02">Corinthians</option>
+                                 <option value="03">Palmeiras</option>
+                                 <option value="04">Santos</option>
+                             </optgroup>
+                             <optgroup label="Times Cariocas">
+                                 <option value="05">Fluminense</option>
+                                 <option value="06">Botafogo</option>
+                                 <option value="07">Flamengo</option>
+                                 <option value="08">Vasco</option>
+                             </optgroup>
+                         </select>
+                     </div>
+                     <div>
+                         <label for="seljogos">Jogos Eletronicos</label>
+                         <select name="sel jogos" id="sel jogos" multiple size="5">
+                             <optgroup label="Aventura">
+                                 <option value="01">The Witcher 3</option>
+                                 <option value="02">Skyrin</option>
+                             </optgroup>
+                             <optgroup label="RPG">
+                                <option value="01">Lendas</option>
+                                <option value="02">Final Fantasy VIII</option>
+                             </optgroup>
+                             <optgroup label="FPS">
+                                <option value="01">Call of Duty MW</option>
+                                <option value="02">Batllefield 1</option>
+                            </optgroup>
+                         </select>
+                     </div>
+                 </fieldset>
+                 <!--uso do textarea-->
+                 <fieldset>
+                     <legend>Usando o TextArea</legend>
+                     <div>
+                         <label for="txtbio">Biografia</label>
+                         <textarea name="txtbio" id="txtbio" cols="30" rows="10">
+                             Aqui vai o texto
+                         </textarea>
+                     </div>
+                 </fieldset>
                 <input type="submit" value="Enviar" id="btnEnviar">
                 <input type="reset" value="limpar" id="btnlimpar">
         </form>
