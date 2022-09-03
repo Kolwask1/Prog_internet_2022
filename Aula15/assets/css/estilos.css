@@ -1,0 +1,48 @@
+* { font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+header{
+    height: auto;    
+    background-color: rgb(67, 131, 226);
+    color: white;
+    padding: 4px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+header h2{
+    margin-left: 10px;
+}
+
+.clCampos{
+    display: flex;
+    padding: 5px;
+    gap: 15px;
+    align-items: center;
+}
+.clCampos input:not([type=radio]){
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid silver
+}
+.cjInput{
+    display: flex;
+}
+.btnInput{
+    background-color: darkgray;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+}
+.cjInput{
+    border-radius: 0 5px 5px 0 !important;
+}
+.cl3Colunas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.clObrigatorio{
+    color: red;
+}
+.Cadastrar{
+    background-color: green;
+}
